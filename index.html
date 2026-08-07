@@ -909,44 +909,45 @@
           <p class="seller-phone">电话：<strong>___________</strong></p>
           <p class="seller-wechat">微信：<strong>___________</strong></p>
         </div>
-        <form id="orderForm" onsubmit="submitOrder(event)">
+        <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+          <input type="hidden" name="_subject" value="🛒 新订单 - 2026汶川高山青脆李">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://MR-zhong105.github.io/plum-sales/thanks.html">
           <h3>📋 您的订单信息</h3>
-          <div class="form-row">
-            <div class="form-group">
-              <label>选择规格</label>
-              <select id="spec" required>
-                <option value="">请选择...</option>
-                <option value="中果装 ¥48/箱（80±5枚）">中果装 — ¥48/箱（约80枚）</option>
-                <option value="大果装 ¥58/箱（70±5枚）">大果装 — ¥58/箱（约70枚）</option>
-                <option value="特大礼盒 ¥68/箱（50-60枚）">特大礼盒 — ¥68/箱（约50枚）</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label>购买数量（箱）</label>
-              <input type="number" id="qty" min="1" value="1" required>
-            </div>
+          <div class="form-group">
+            <label>选择规格</label>
+            <select name="选择规格" id="spec" required>
+              <option value="">请选择...</option>
+              <option value="中果装 ¥48/箱（80±5枚）">中果装 — ¥48/箱（约80枚）</option>
+              <option value="大果装 ¥58/箱（70±5枚）">大果装 — ¥58/箱（约70枚）</option>
+              <option value="特大礼盒 ¥68/箱（50-60枚）">特大礼盒 — ¥68/箱（约50枚）</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>购买数量（箱）</label>
+            <input type="number" name="购买数量" id="qty" min="1" value="1" required>
           </div>
           <div class="form-group">
             <label>收货地址</label>
-            <input type="text" id="address" placeholder="省/市/区/街道/门牌号" required>
+            <input type="text" name="收货地址" id="address" placeholder="省/市/区/街道/门牌号" required>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label>收货人姓名</label>
-              <input type="text" id="name" placeholder="您的姓名" required>
+              <input type="text" name="收货人姓名" id="name" placeholder="您的姓名" required>
             </div>
             <div class="form-group">
               <label>手机号码</label>
-              <input type="tel" id="phone" placeholder="您的手机号" required>
+              <input type="tel" name="手机号码" id="phone" placeholder="您的手机号" required>
             </div>
           </div>
           <div class="form-group">
             <label>备注（选填）</label>
-            <textarea id="note" rows="2" placeholder="如有特殊要求请备注"></textarea>
+            <textarea name="备注" id="note" rows="2" placeholder="如有特殊要求请备注"></textarea>
           </div>
           <button type="submit" class="submit-btn">📤 提交订单</button>
         </form>
-        <div id="orderResult" style="display:none;"></div>
       </div>
     </div>
   </section>
@@ -1037,46 +1038,6 @@
         document.getElementById('spec').value = specMap[tier];
       }
       document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // Submit order
-    function submitOrder(e) {
-      e.preventDefault();
-      const spec = document.getElementById('spec').value;
-      const qty = document.getElementById('qty').value;
-      const address = document.getElementById('address').value;
-      const name = document.getElementById('name').value;
-      const phone = document.getElementById('phone').value;
-      const note = document.getElementById('note').value;
-      const total = spec.includes('48') ? 48 * qty : spec.includes('58') ? 58 * qty : 68 * qty;
-
-      const msg = `🛒 新订单\n\n` +
-        `📦 规格：${spec}\n` +
-        `🔢 数量：${qty}箱\n` +
-        `💰 合计：¥${total}\n\n` +
-        `👤 收货人：${name}\n` +
-        `📱 电话：${phone}\n` +
-        `📍 地址：${address}\n` +
-        `${note ? '📝 备注：' + note + '\n' : ''}`;
-
-      const result = document.getElementById('orderResult');
-      result.style.display = 'block';
-      result.className = 'info';
-      result.innerHTML = `
-        <strong>✅ 订单已生成！</strong><br><br>
-        请将以下信息发送给卖家完成下单：<br><br>
-        <pre style="background:var(--green-pale);padding:1rem;border-radius:8px;text-align:left;font-size:0.9rem;white-space:pre-wrap;">${msg}</pre><br>
-        <button onclick="copyOrder()" style="padding:10px 24px;background:var(--green-mid);color:white;border:none;border-radius:8px;cursor:pointer;font-size:1rem;">📋 复制订单信息</button>
-      `;
-      window._lastOrder = msg;
-    }
-
-    function copyOrder() {
-      navigator.clipboard.writeText(window._lastOrder).catch(() => {});
-      const result = document.getElementById('orderResult');
-      result.className = 'success';
-      result.innerHTML = '<strong>✅ 已复制到剪贴板！</strong><br>请将信息发送给卖家';
-      setTimeout(() => { result.style.display = 'none'; }, 3000);
     }
 
     // Smooth scroll
