@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年汶川高山青脆李 | 新鲜到家</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+    :root {
+      --green-dark: #1a3c2a;
+      --green-mid: #2d6a4f;
+      --green-light: #52b788;
+      --green-pale: #d8f3dc;
+      --gold: #e9c46a;
+      --gold-dark: #f4a259;
+      --cream: #fefae0;
+      --white: #ffffff;
+      --text: #1b4332;
+      --text-light: #588157;
+      --radius: 20px;
+      --shadow: 0 8px 32px rgba(26,60,42,0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* === HERO === */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(160deg, var(--green-dark) 0%, var(--green-mid) 60%, var(--green-light) 100%);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 20%, rgba(233,196,106,0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 80% at 10% 80%, rgba(82,183,136,0.3) 0%, transparent 50%);
+    }
+
+    .hero-particles {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.08);
+      animation: float linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 2rem;
+      max-width: 800px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--gold);
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+      animation: fadeDown 0.8s ease-out;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      animation: fadeDown 0.8s ease-out 0.1s both;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 3vw, 1.35rem);
+      color: rgba(255,255,255,0.85);
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+      animation: fadeDown 0.8s ease-out 0.2s both;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--green-dark);
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 18px 48px;
+      border-radius: 60px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 30px rgba(233,196,106,0.4);
+      animation: fadeDown 0.8s ease-out 0.3s both;
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 40px rgba(233,196,106,0.55);
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      animation: bounce 2s infinite;
+    }
+
+    .scroll-hint::after {
+      content: '↓';
+      display: block;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 4px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(8px); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === ORIGIN === */
+    .origin {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--green-light);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    .origin-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .origin-card {
+      background: var(--green-pale);
+      border-radius: var(--radius);
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .origin-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .origin-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .origin-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--green-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .origin-card p {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* === PRODUCTS === */
+    .products {
+      padding: 6rem 2rem;
+      background: linear-gradient(180deg, var(--cream) 0%, var(--white) 100%);
+    }
+
+    .products-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .price-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .price-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .price-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(26,60,42,0.18);
+    }
+
+    .price-card.featured {
+      border-color: var(--gold);
+      background: linear-gradient(180deg, #fffbeb 0%, var(--white) 40%);
+    }
+
+    .price-card.featured::before {
+      content: '🔥 最畅销';
+      position: absolute;
+      top: 16px;
+      right: -32px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--green-dark);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 40px;
+      transform: rotate(45deg);
+      letter-spacing: 1px;
+    }
+
+    .card-tier {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green-mid);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 50px;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .price-card.featured .card-tier {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--green-dark);
+    }
+
+    .card-specs {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .card-price {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-symbol {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--green-dark);
+    }
+
+    .price-value {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      line-height: 1;
+    }
+
+    .price-unit {
+      font-size: 1rem;
+      color: var(--text-light);
+      font-weight: 400;
+    }
+
+    .card-features {
+      list-style: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--green-pale);
+    }
+
+    .card-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      padding: 6px 0;
+    }
+
+    .card-features li::before {
+      content: '✓';
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background: var(--green-pale);
+      color: var(--green-mid);
+      border-radius: 50%;
+      font-size: 0.7rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .card-features li strong {
+      color: var(--text);
+    }
+
+    .card-order-btn {
+      display: block;
+      width: 100%;
+      margin-top: 2rem;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
+      color: var(--white);
+      border: none;
+      border-radius: 14px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .card-order-btn:hover {
+      background: linear-gradient(135deg, var(--green-light) 0%, var(--green-mid) 100%);
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(45,106,79,0.35);
+    }
+
+    .price-card.featured .card-order-btn {
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+      color: var(--green-dark);
+    }
+
+    .price-card.featured .card-order-btn:hover {
+      box-shadow: 0 8px 24px rgba(233,196,106,0.5);
+    }
+
+    /* === SHIPPING === */
+    .shipping {
+      padding: 4rem 2rem;
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .shipping-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .shipping-item {
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .shipping-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .shipping-item h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      color: var(--gold);
+    }
+
+    .shipping-item p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+    }
+
+    /* === TIPS === */
+    .tips {
+      padding: 5rem 2rem;
+      background: var(--white);
+    }
+
+    .tips-box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, var(--green-pale) 0%, #e8f5e9 100%);
+      border-radius: var(--radius);
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tips-box::before {
+      content: '💡';
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 8rem;
+      opacity: 0.08;
+    }
+
+    .tips-box h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 1.2rem;
+    }
+
+    .tips-box p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 2;
+    }
+
+    /* === AFTER-SALES === */
+    .aftersales {
+      padding: 5rem 2rem;
+      background: var(--cream);
+    }
+
+    .aftersales-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .aftersales-box {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 3rem;
+      box-shadow: var(--shadow);
+      border-left: 5px solid var(--green-light);
+    }
+
+    .aftersales-box h3 {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .aftersales-list {
+      list-style: none;
+    }
+
+    .aftersales-list li {
+      display: flex;
+      gap: 14px;
+      padding: 1rem 0;
+      border-bottom: 1px solid var(--green-pale);
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .aftersales-list li:last-child {
+      border-bottom: none;
+    }
+
+    .aftersales-list .icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .aftersales-list .tag {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green-mid);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 50px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    /* === FOOTER === */
+    footer {
+      padding: 3rem 2rem;
+      background: var(--green-dark);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer .footer-brand {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    /* === SCROLL ANIMATIONS === */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* === ORDER SECTION === */
+    .order-section {
+      padding: 6rem 2rem;
+      background: var(--white);
+    }
+
+    .order-form-box {
+      max-width: 640px;
+      margin: 0 auto;
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .seller-contact {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .seller-contact h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: var(--gold);
+    }
+
+    .seller-contact p {
+      font-size: 1rem;
+      margin: 0.4rem 0;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .seller-contact strong {
+      color: var(--gold);
+      font-size: 1.2rem;
+    }
+
+    .order-form-box form h3 {
+      font-size: 1.2rem;
+      font-weight: 900;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--green-pale);
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      color: var(--text);
+      background: var(--white);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--green-light);
+      box-shadow: 0 0 0 3px rgba(82,183,136,0.15);
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: #aaa;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--green-mid) 0%, var(--green-dark) 100%);
+      color: var(--white);
+      border: none;
+      border-radius: 14px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+      margin-top: 0.5rem;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(135deg, var(--green-light) 0%, var(--green-mid) 100%);
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(45,106,79,0.35);
+    }
+
+    #orderResult {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    #orderResult.success {
+      background: var(--green-pale);
+      color: var(--green-dark);
+    }
+
+    #orderResult.info {
+      background: #fffbeb;
+      color: var(--text);
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      .price-cards {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .tips-box {
+        padding: 2rem;
+      }
+
+      .aftersales-box {
+        padding: 2rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .order-form-box {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="badge">🌿 2026 新季上市</div>
+      <h1>汶川<span>高山青脆李</span><br>鲜甜来袭</h1>
+      <p class="hero-sub">海拔1500米高山种植 · 自然熟成 · 脆甜多汁<br>中通快递包邮到家 · 电话：<strong>138-0000-0000</strong></p>
+      <a href="#prices" class="hero-cta">
+        🛒 立即选购
+      </a>
+    </div>
+    <div class="scroll-hint">向下滚动</div>
+  </section>
+
+  <!-- ORIGIN -->
+  <section class="origin">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">产地故事</p>
+        <h2 class="section-title">四川汶川 · 高山果园<br>纯净自然，颗颗精品</h2>
+      </div>
+      <div class="origin-grid">
+        <div class="origin-card reveal">
+          <div class="origin-icon">⛰️</div>
+          <h3>高海拔种植</h3>
+          <p>生长在海拔1500米以上高山，昼夜温差大，果实糖分积累更充分，口感脆甜有层次。</p>
+        </div>
+        <div class="origin-card reveal">
+          <div class="origin-icon">🌱</div>
+          <h3>自然熟成</h3>
+          <p>不打催熟剂，不提前采摘，让果实完全自然成熟挂枝，保留最原始的清甜风味。</p>
+        </div>
+        <div class="origin-card reveal">
+          <div class="origin-icon">✈️</div>
+          <h3>产地直发</h3>
+          <p>从枝头到餐桌，全程冷链保鲜，中通快递包邮，新鲜直达您的手中。</p>
+        </div>
+        <div class="origin-card reveal">
+          <div class="origin-icon">🏆</div>
+          <h3>精选果品</h3>
+          <p>每颗李子都经过人工精选，剔除次果，确保果大饱满、色泽鲜亮、口感上乘。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICES -->
+  <section class="products" id="prices">
+    <div class="container">
+      <div class="products-header reveal">
+        <p class="section-label">价格一览</p>
+        <h2 class="section-title">三种规格，任您选择</h2>
+      </div>
+      <div class="price-cards">
+
+        <!-- 中果 -->
+        <div class="price-card reveal">
+          <span class="card-tier">中果装</span>
+          <div class="card-specs">
+            每箱约 <strong>80±5枚</strong><br>
+            单果约 55-65g<br>
+            5斤/箱
+          </div>
+          <div class="card-price">
+            <span class="price-symbol">¥</span>
+            <span class="price-value">48</span>
+            <span class="price-unit">/箱</span>
+          </div>
+          <ul class="card-features">
+            <li>中通快递 <strong>包邮</strong></li>
+            <li>适合日常食用、家庭分享</li>
+            <li>性价比高，回购首选</li>
+          </ul>
+          <button class="card-order-btn" onclick="order('中果¥48')">📦 立即下单</button>
+        </div>
+
+        <!-- 大果 -->
+        <div class="price-card featured reveal">
+          <span class="card-tier">大果装</span>
+          <div class="card-specs">
+            每箱约 <strong>70±5枚</strong><br>
+            单果约 65-75g<br>
+            5斤/箱
+          </div>
+          <div class="card-price">
+            <span class="price-symbol">¥</span>
+            <span class="price-value">58</span>
+            <span class="price-unit">/箱</span>
+          </div>
+          <ul class="card-features">
+            <li>中通快递 <strong>包邮</strong></li>
+            <li>果粒饱满，口感脆甜</li>
+            <li>人气之选，送礼自用两相宜</li>
+          </ul>
+          <button class="card-order-btn" onclick="order('大果¥58')">📦 立即下单</button>
+        </div>
+
+        <!-- 特大果 -->
+        <div class="price-card reveal">
+          <span class="card-tier">特大礼盒</span>
+          <div class="card-specs">
+            每箱约 <strong>50-60枚</strong><br>
+            单果约 75g+<br>
+            5斤/箱 · 精致礼盒包装
+          </div>
+          <div class="card-price">
+            <span class="price-symbol">¥</span>
+            <span class="price-value">68</span>
+            <span class="price-unit">/箱</span>
+          </div>
+          <ul class="card-features">
+            <li>中通快递 <strong>包邮</strong></li>
+            <li>精美礼盒定制包装</li>
+            <li>果大味甜，节日送礼佳品</li>
+          </ul>
+          <button class="card-order-btn" onclick="order('特大礼盒¥68')">📦 立即下单</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SHIPPING -->
+  <section class="shipping">
+    <div class="shipping-inner">
+      <div class="shipping-item reveal">
+        <div class="shipping-icon">📦</div>
+        <h4>中通快递包邮</h4>
+        <p>全国大部分地区<br>中通快递免费配送</p>
+      </div>
+      <div class="shipping-item reveal">
+        <div class="shipping-icon">🚀</div>
+        <h4>京东快递升级</h4>
+        <p>需发京东地区<br>每箱加收 <strong style="color:var(--gold)">10元</strong></p>
+      </div>
+      <div class="shipping-item reveal">
+        <div class="shipping-icon">🏔️</div>
+        <h4>东三省专属</h4>
+        <p>东北三省需发京东<br>每箱加收 <strong style="color:var(--gold)">20元</strong></p>
+      </div>
+      <div class="shipping-item reveal">
+        <div class="shipping-icon">🍃</div>
+        <h4>新鲜采摘</h4>
+        <p>下单后现摘现发<br>不库存，不隔夜</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section class="tips">
+    <div class="container">
+      <div class="tips-box reveal">
+        <h3>💡 品尝小贴士</h3>
+        <p>收到李子后，请将果子取出放冰箱<strong>冰镇一小时</strong>再食用，口感更加脆甜爽口，风味倍增！青脆李宜现吃现买，尽快享用最佳风味 🌿</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section class="order-section" id="order">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">在线下单</p>
+        <h2 class="section-title">填写信息，快速下单</h2>
+      </div>
+      <div class="order-form-box reveal">
+        <div class="seller-contact">
+          <h3>📞 卖家联系方式</h3>
+          <p class="seller-phone">电话：<strong>___________</strong></p>
+          <p class="seller-wechat">微信：<strong>___________</strong></p>
+        </div>
+        <form id="orderForm" onsubmit="submitOrder(event)">
+          <h3>📋 您的订单信息</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>选择规格</label>
+              <select id="spec" required>
+                <option value="">请选择...</option>
+                <option value="中果装 ¥48/箱（80±5枚）">中果装 — ¥48/箱（约80枚）</option>
+                <option value="大果装 ¥58/箱（70±5枚）">大果装 — ¥58/箱（约70枚）</option>
+                <option value="特大礼盒 ¥68/箱（50-60枚）">特大礼盒 — ¥68/箱（约50枚）</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>购买数量（箱）</label>
+              <input type="number" id="qty" min="1" value="1" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>收货地址</label>
+            <input type="text" id="address" placeholder="省/市/区/街道/门牌号" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>收货人姓名</label>
+              <input type="text" id="name" placeholder="您的姓名" required>
+            </div>
+            <div class="form-group">
+              <label>手机号码</label>
+              <input type="tel" id="phone" placeholder="您的手机号" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>备注（选填）</label>
+            <textarea id="note" rows="2" placeholder="如有特殊要求请备注"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">📤 提交订单</button>
+        </form>
+        <div id="orderResult" style="display:none;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AFTER-SALES -->
+  <section class="aftersales">
+    <div class="aftersales-inner">
+      <div class="reveal" style="text-align:center;margin-bottom:2rem;">
+        <p class="section-label">售后保障</p>
+        <h2 class="section-title">吃得不满意？我们负责到底</h2>
+      </div>
+      <div class="aftersales-box reveal">
+        <h3>🛡️ 坏果赔付政策</h3>
+        <ul class="aftersales-list">
+          <li>
+            <span class="icon">📸</span>
+            <span><strong>签收8小时内</strong>如发现坏果，请将坏果与面单一起拍照，联系客服即可赔付</span>
+            <span class="tag">限时</span>
+          </li>
+          <li>
+            <span class="icon">💰</span>
+            <span>坏果按 <strong>1元/个</strong> 标准赔付，快速退款</span>
+            <span class="tag">即时</span>
+          </li>
+          <li>
+            <span class="icon">⚠️</span>
+            <span>轻微小磕碰不影响食用，或<span style="color:#c0392b;font-weight:700;">因个人原因导致的水果腐坏</span>，不予售后</span>
+            <span class="tag">须知</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FOOTER -->
+  <section style="padding:6rem 2rem;text-align:center;background:linear-gradient(160deg,var(--green-mid) 0%,var(--green-dark) 100%);">
+  <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:var(--white);margin-bottom:1rem;">2026高山青脆李<br>鲜季不等人</h2>
+      <p style="color:rgba(255,255,255,0.7);font-size:1.1rem;margin-bottom:2.5rem;">高山好果 · 一年一味 · 新鲜直达</p>
+      <a href="#prices" style="display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:var(--green-dark);font-size:1.1rem;font-weight:700;padding:18px 48px;border-radius:60px;text-decoration:none;transition:all 0.3s ease;box-shadow:0 8px 30px rgba(233,196,106,0.4);">
+        🛒 马上选购
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">汶川高山青脆李</div>
+    <p>2026年新季上市 · 产地直发 · 中通包邮</p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">© 2026 汶川高山青脆李 · 所有内容仅供展示</p>
+  </footer>
+
+  <script>
+    // Particles
+    const particlesEl = document.getElementById('particles');
+    for (let i = 0; i < 20; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 12 + 4;
+      p.style.cssText = `
+        width:${size}px;height:${size}px;
+        left:${Math.random()*100}%;
+        animation-duration:${Math.random()*15+10}s;
+        animation-delay:${Math.random()*10}s;
+      `;
+      particlesEl.appendChild(p);
+    }
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Order handler
+    function order(tier) {
+      document.getElementById('spec').value = '';
+      const specMap = {
+        '中果¥48': '中果装 ¥48/箱（80±5枚）',
+        '大果¥58': '大果装 ¥58/箱（70±5枚）',
+        '特大礼盒¥68': '特大礼盒 ¥68/箱（50-60枚）'
+      };
+      if (specMap[tier]) {
+        document.getElementById('spec').value = specMap[tier];
+      }
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Submit order
+    function submitOrder(e) {
+      e.preventDefault();
+      const spec = document.getElementById('spec').value;
+      const qty = document.getElementById('qty').value;
+      const address = document.getElementById('address').value;
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const note = document.getElementById('note').value;
+      const total = spec.includes('48') ? 48 * qty : spec.includes('58') ? 58 * qty : 68 * qty;
+
+      const msg = `🛒 新订单\n\n` +
+        `📦 规格：${spec}\n` +
+        `🔢 数量：${qty}箱\n` +
+        `💰 合计：¥${total}\n\n` +
+        `👤 收货人：${name}\n` +
+        `📱 电话：${phone}\n` +
+        `📍 地址：${address}\n` +
+        `${note ? '📝 备注：' + note + '\n' : ''}`;
+
+      const result = document.getElementById('orderResult');
+      result.style.display = 'block';
+      result.className = 'info';
+      result.innerHTML = `
+        <strong>✅ 订单已生成！</strong><br><br>
+        请将以下信息发送给卖家完成下单：<br><br>
+        <pre style="background:var(--green-pale);padding:1rem;border-radius:8px;text-align:left;font-size:0.9rem;white-space:pre-wrap;">${msg}</pre><br>
+        <button onclick="copyOrder()" style="padding:10px 24px;background:var(--green-mid);color:white;border:none;border-radius:8px;cursor:pointer;font-size:1rem;">📋 复制订单信息</button>
+      `;
+      window._lastOrder = msg;
+    }
+
+    function copyOrder() {
+      navigator.clipboard.writeText(window._lastOrder).catch(() => {});
+      const result = document.getElementById('orderResult');
+      result.className = 'success';
+      result.innerHTML = '<strong>✅ 已复制到剪贴板！</strong><br>请将信息发送给卖家';
+      setTimeout(() => { result.style.display = 'none'; }, 3000);
+    }
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
